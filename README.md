@@ -12,7 +12,6 @@ that will take care of installing everything you need for this course, including
 
 ## Install pre-requisites of the course for ARM64 systems
 If you are using MacOS with apple silicon, the script above will not work. Please follow this blog [How to Set Up VMware, Ubuntu 22, ROS2, and Gazebo on Arm64 (like Apple Silicon or Jetson)](https://medium.com/@MinghaoNing/how-to-set-up-vmware-ubuntu-22-ros2-and-gazebo-on-arm64-like-apple-silicon-or-jetson-5bb4db6ff297) to set up your VM.
-```
 
 ## Check your installation
 Once the script has finished the installation, you can quickly check the performance of your system with the Gazebo simulation. Open a terminal and run:
