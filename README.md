@@ -1,7 +1,58 @@
 # ME597 - Autonomous Mobile Robots - Setup
 
 ## Install pre-requisites of the course for x86_64 systems
-If you have not installed Ubuntu 22.04 yet, please do that first.
+If you have not installed Ubuntu 22.04 yet, please do that first, please note this section is for **Windows x86_64** systems. If you are using MacOS with apple silicon, please skip this section and go to the next section.
+#### Install Ubuntu22.04 as a Virtual Machine
+##### Minimum System Requirements Recommended:
+1.Diskspace:40GB
+2.RAM:8-16 GB
+3.CPU @ least 10 GHz in total (~ 4 cores)
+
+##### Virtual Machine Instructions:
+1. Download [Ubuntu 22.04 Desktop AMD64](https://releases.ubuntu.com/jammy/ubuntu-22.04.5-desktop-amd64.iso).
+2. Download [VMWare Workstation 17](https://uofwaterloo.sharepoint.com/:u:/r/sites/tm-class-mte544fall2024-1054674-Teachingteam/Shared%20Documents/Teaching%20team/Labs/VM%20installation/VMware-workstation-17.6.0-24238078.exe?csf=1&web=1&e=nqfj9M), this program was uploaded to UWaterloo's SharePoint, you will need to log in with your UWaterloo credentials to download it.
+3. Run the downloaded VMware installer.
+4. Follow the setup wizard and keep the default settings.
+5. Run VMware and keep the default settings, select “Use VMware Workstation 17 for Personal Use”.
+6. Choose “Create a New Virtual Machine” as shown below:
+    ![alt text](./figs/image-1.png)
+7. Select “Browse” and choose the directory for the Ubuntu discimage you have just downloaded:
+    ![alt text](./figs/image-2.png)
+8. Select “Next” and follow the Wizard instructions until you reach “Specify Disk Capacity”.
+9. As shown below, changes the settings under “Specify Disk Capacity” to be:
+    I. 30 (or more if you wish) in “Maximum disk size (GB)” instead of 25.
+    II. “Store virtual disk as a single file” for the virtual disk setting instead of multiple files.
+    ![alt text](./figs/image-3.png)
+10. Select “Next”, you will see a summary of your settings. Click on “Customize Hardware…”. The window below will open. Here you can select computational resources you want to reserve to your virtual machine. It is recommended to provide at least 4GB of RAM (8 if possible, depending on your host machine, you can see on the window the recommendations by VMWare based on the host machine), and 2 processor cores (4 if possible, depending on host machine, do not use all or more cores than your host has). You can also change these settings after the VM is created if you needto increase or decrease.
+    ![alt text](./figs/image-4.png)
+11. Close the Customize Hardware window, and then click on“Finish”.
+12. VMware should open and Ubuntu installation will start automatically.This step will take some time.
+13. Enter your password.
+14. Follow the setup, you should not need to change any default setting.
+15. Make sure the host machine has internet access.
+16. Go to VMware settings: Click “VM” at the top left and choose “Settings”, as shown below:
+    ![alt text](./figs/image-5.png)
+17. In the left menu, select “Network Adapter”. By default, NAT should be selected.
+18. Make sure that under Device Status, you have ‘Connected’ and ‘Connected at power on’ both selected.
+19. Surf the internet using Firefox. If you have internet, you have successfully configured the VMware network settings.
+20. To make sure you installed everything correctly,open a terminal via press `Ctrl+Shift+T`, and run:
+    ```
+    sudo apt update && sudo apt install lsb-core lsb-release
+    ```
+21. Then run the following command to check the version of Ubuntu:
+    ```
+    lsb_release -a
+    ```
+22. You should see something like this:
+    ```
+    Distributor ID: Ubuntu
+    Description: Ubuntu 22.04.4LTS
+    Release: 22.04
+    Codename:jammy
+    ```
+23. Finally, install git with `sudo apt install git` in a terminal.
+
+#### Install ROS2
 Download the script (or if you installed ```git```, clone this repository with ```git clone https://github.com/ME597c/ME597c-Students.git```, then change the branch to ```setup``` with ```git checkout setup```)
 
 Run the script (it needs sudo privilege, so you will need to type in your password when prompted):
