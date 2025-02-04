@@ -18,7 +18,9 @@ In this lab, Participants will gain hands-on experience with mobile robots and a
     * **agility** (how quickly a control system responds to changes in the desired setpoint), 
     * **accuracy** (the ability of the control system to reach and maintain the desired setpoint without steady-state error), and
     * **overshoot** (the amount by which a system overshoots the desired setpoint in its initial response).
-
+Here are some references that you can use to understand these concepts:
+* [page 133 of the pdf: PID Controllers 2nd Edition](https://www.ucg.ac.me/skladiste/blog_2146/objava_92847/fajlovi/Astrom.pdf)
+* [Introduction to Control Systems](https://pressbooks.library.torontomu.ca/controlsystems/chapter/4-3-step-response-specifications-definitions/)
 
 ### NOTES for pre-lab activities
 Given the limited time in the lab, it is highly recommended to go through this manual and start (or complete) your implementation before the lab date, by working on your personal setup (VMWare, remote desktop, lent laptop), and using simulation for testing when needed to verify that your codes are working before coming into the lab. For simulation, refer to `tbt3Simulation.md` in the `main` branch.
@@ -37,8 +39,10 @@ In this lab, you will be tuning PID gains for the controller. Remember that gain
 
 In the lab, on the physical robot, tune to achieve reasonable results, and to obtain sufficient plots to demonstrate your tuning process (see sections below and what is needed to report in Conclusion).
 
-You may find the following resources helpful if you have no idea how to tune a PID controller:
-<iframe width="712" height="401" src="https://www.youtube.com/embed/dZ8lzDi3cXY" title="How to Tune a PID Controller" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+You may find the following video helpful if you have no idea how to tune a PID controller:
+
+[![Watch the video](https://img.youtube.com/vi/dZ8lzDi3cXY/0.jpg)](https://www.youtube.com/watch?v=dZ8lzDi3cXY)
+
 
 ## Part 1 - connecting to the robot (no marks)
 Open the [connectToUWtb4s.md](https://github.com/ME597c/ME597c-Students/blob/main/connectToUWtb4s.md) markdown file in the main branch, and follow along. Read and follow each step carefully. 
