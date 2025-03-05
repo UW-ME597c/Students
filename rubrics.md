@@ -10,6 +10,7 @@
 - ```5``` marks for finishing the random particle generation for initialization in `particleFilter.py -> initializeParticleFilter`.
 - ```5``` marks for finishing the random particle sampling in `particleFilter.py -> resample`.
 - ```5``` marks for finishing the particle filter adding noise to the sampled particles in `particleFilter.py -> resample`.
+
 **In-Lab: 20 marks**
 - ```5``` marks for explaining the likelihood computation in `mapUtilities.py -> make_likelihood_field` to a TA.
 - ```5``` marks for explaining how to compute the weight for each particle in `particle.py -> calculateParticleWeight` to a TA.
@@ -18,6 +19,7 @@
 ## Part 5: 20 marks
 **Codes: 10 marks**
 - ```10``` marks for correctly logging the pose in `localization.py -> odom_and_pf_pose_callback`.
+
 **In-Lab: 10 marks**
 - ```10``` marks for integrating the particle filter with the navigation stack and demonstrating particle filter-based localization in Rviz while the robot moves to a goal using the point controller.
 
