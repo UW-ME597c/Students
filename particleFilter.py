@@ -172,7 +172,7 @@ class particleFilter(Node):
         # print("Sum of weights: ", np.sum(particles_weights))
         particles_weights = particles_weights / np.sum(particles_weights)
         
-        # TODO: randoming sampling N particles from the list of particles based on their weights (hint: use np.random.choice)
+        # TODO: randomly sampling N particles from the list of particles based on their weights (hint: use np.random.choice)
         sampled_particles = ...
 
         for bp in sampled_particles:
