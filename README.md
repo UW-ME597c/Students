@@ -148,7 +148,7 @@ Now you need to run the point controller developed in LAB #2 with particle filte
   python3 decisions.py
   ``` 
   - When the Rviz window opened throw a good guess by using ```2D pose estimate``` button in the top toolbar.
-  - When the particles converged, choose your goal using ```2D nav goal``` button in the top toolbar.
+  - When the particles converged, choose your goal using ```2D Goal Pose``` button in the top toolbar.
 - Remember to **save the robotPose.csv file for the report**.
 #### In-lab marking: You need to show the particle filter pose estimation in Rviz and the robot moving to the goal via the point controller. (10 marks)
 **IMPORTANT!! Before you leave, DELETE all of your codes, files, etc.**
