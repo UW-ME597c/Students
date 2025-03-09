@@ -31,7 +31,7 @@ ros2 launch turtlebot3_gazebo turtlebot3_dqn_stage1.launch.py
 You are also welcome to use some other map, or even add obstacles by yourself in gazebo, just remember to use the same map for SLAM and the particle filter.
 
 ### Pre-lab deliverable (5 marks)
-A first version of the completed code is to be submitted **24 hours before the group's lab section** (e.g. groups on the Wednesday section must submit by Tuesday at 3 PM), along with a list of doubts/questions to be solved during the in-person lab section (optional, if needed). The in-person lab is not meant for implementation but for testing and getting help from the TAs. 
+A first version of the completed code is to be submitted **24 hours before the group's lab section** (e.g. groups on the Thursday section must submit by Wednesday at 5:30 PM), along with a list of doubts/questions to be solved during the in-person lab section (optional, if needed). The in-person lab is not meant for implementation but for testing and getting help from the TAs. 
 
 Failure to submit will result in a penalty of 5 marks on the lab report. The code does not have to be fully correct, but it should be (at least almost) complete and meaningful with appropriate comments.
 
