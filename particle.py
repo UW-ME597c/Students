@@ -23,9 +23,9 @@ class particle:
         self.pose[2] += ...
 
     # TODO: You need to explain the following function to TA
-    def calculateParticleWeight(self, scanOutput: LaserScan, mapManipulatorInstance: mapManipulator, laser_to_odom_transformation: np.array):
+    def calculateParticleWeight(self, scanOutput: LaserScan, mapManipulatorInstance: mapManipulator, laser_to_ego_transformation: np.array):
 
-        T = np.matmul(self.__poseToTranslationMatrix(), laser_to_odom_transformation)
+        T = np.matmul(self.__poseToTranslationMatrix(), laser_to_ego_transformation)
 
         _, scanCartesianHomo = convertScanToCartesian(scanOutput)
         scanInMap = np.dot(T, scanCartesianHomo.T).T
