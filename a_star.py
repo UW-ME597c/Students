@@ -135,13 +135,13 @@ def search(maze, start, end):
         # Every time any node is referred from yet_to_visit list, counter of limit operation incremented
         outer_iterations += 1
 
-        # Get the current node with the lowest f value
+        # TODO: Get the current node with the lowest f value
         current_node = None
         current_fscore = None
         for position, node in yet_to_visit_dict.items():
             if current_fscore is None or node.f < current_fscore:
-                current_fscore = node.f
-                current_node = node
+                current_fscore = ...
+                current_node = ...
 
         # if we hit this point return the path such as it may be no solution or
         # computation cost is too high
@@ -163,8 +163,8 @@ def search(maze, start, end):
 
         for new_position in move:
 
-            # TODO PART 4 Get node position
-            node_position = (...)
+            # Get node position
+            node_position = (current_node.position[0] + new_position[0], current_node.position[1] + new_position[1])
 
             # TODO PART 4 Make sure within range (check if within maze boundary)
             if (...):
