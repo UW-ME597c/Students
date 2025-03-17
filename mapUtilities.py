@@ -153,7 +153,7 @@ class mapManipulator(Node):
         origin = self.getOrigin()
         res = self.getResolution()
         h = self.height
-        return pix_array * res + origin + np.array([0, -h*res])
+        return (pix_array * np.array([1, -1]) + np.array([0, h])) * res + origin
     
     
     def position_2_cell(self, pos_array):
@@ -165,9 +165,9 @@ class mapManipulator(Node):
         origin = self.getOrigin()
         res = self.getResolution()
         h = self.height
-        return (np.array(np.floor((-origin + pos_array)/res), dtype=np.int32)) - np.array([0, h])
+        return (np.array(np.floor((-origin + pos_array)/res) * np.array([1, -1]) + np.array([0, h]), dtype=np.int32))
 
-    # TODO part 4: See through this method and explain how it works to the TA
+
     def make_likelihood_field(self):
         
         image_array=self.image_array
